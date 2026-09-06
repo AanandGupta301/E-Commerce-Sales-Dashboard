@@ -1,62 +1,43 @@
 # 🛒 E-Commerce Sales Analysis Dashboard
 
-An interactive **E-Commerce Sales Analysis Dashboard** built using **Power BI** and **PostgreSQL** to analyze revenue, orders, customers, products, and payment performance.
-
----
+An interactive **E-Commerce Sales Analysis Dashboard** built using **Power BI** and **PostgreSQL** to analyze sales performance, revenue, orders, customers, products, and payment information.
 
 ## 📊 Dashboard Preview
 
 ![E-Commerce Sales Dashboard](ecommerce_analysis.png)
 
----
-
 ## 🎯 Project Objective
 
-The objective of this project is to analyze e-commerce transaction data and build an interactive Power BI dashboard that provides a clear overview of business performance.
+The main objective of this project is to analyze e-commerce sales data and create an interactive dashboard that helps understand:
 
-The dashboard helps analyze:
-
-- Total Revenue
-- Total Orders
-- Total Customers
+- Overall revenue performance
+- Total number of orders
+- Total customers
 - Average Order Value
-- Product performance
-- Category performance
-- Customer activity
-- Payment information
-- Sales trends
-
----
+- Product and category performance
+- Customer distribution
+- Sales trends and business performance
 
 ## 🛠️ Tools & Technologies
 
-- **PostgreSQL** – Database and data storage
-- **SQL** – Data querying and analysis
-- **Power BI Desktop** – Dashboard development
+- **Power BI** – Dashboard development and data visualization
+- **PostgreSQL** – Database and data management
 - **DAX** – Measures and calculations
-- **Power Query** – Data transformation
+- **Power Query** – Data transformation and cleaning
 - **GitHub** – Project documentation and version control
 
----
+## 📁 Dataset / Data Model
 
-## 🗂️ Database Tables
+The Power BI data model contains the following tables:
 
-The PostgreSQL database contains the following tables:
-
-### 👥 Customers
-
-Contains customer information:
-
+### Customers
 - customer_id
 - customer_name
 - city
 - state
 - signup_date
 
-### 🛒 Orders
-
-Contains order transaction information:
-
+### Orders
 - order_id
 - customer_id
 - order_date
@@ -65,43 +46,86 @@ Contains order transaction information:
 - quantity
 - status
 
-### 💳 Payments
-
-Contains payment information:
-
-- order_id
-- payment_id
-- payment_method
-- payment_status
-
-### 📦 Products
-
-Contains product information:
-
+### Products
 - product_id
 - product_name
 - category
 - sub_category
 
----
+### Payments
+- payment_id
+- order_id
+- payment_method
+- payment_status
 
 ## 🔗 Data Model
 
-The Power BI model connects the main tables using relationships between related keys.
+The project uses relationships between Customers, Orders, Products, and Payments to create an integrated e-commerce analysis model.
 
-```text
-Customers
-    │
-    │ customer_id
-    ▼
-  Orders
-    │
-    │ product_id
-    ▼
- Products
+## 📌 Key KPIs
 
- Orders
-    │
-    │ order_id
-    ▼
- Payments
+The dashboard includes important business KPIs such as:
+
+- **Total Revenue:** 56.55M
+- **Total Orders:** 2K
+- **Total Customers:** 297
+- **Average Order Value:** 37.70K
+
+## 📈 Dashboard Features
+
+- KPI cards for key business metrics
+- Interactive Power BI visualizations
+- Customer and order analysis
+- Product and category analysis
+- Revenue analysis
+- Payment analysis
+- Interactive filtering and cross-filtering
+- Relational data model using multiple tables
+
+## 💡 Key Insights
+
+The dashboard provides a single view of e-commerce performance and helps identify patterns in:
+
+- Revenue generation
+- Customer activity
+- Order performance
+- Product performance
+- Category-level sales
+- Payment behavior
+
+## 📂 Project Files
+
+| File | Description |
+|------|-------------|
+| `Ecommerce_analysis.pbix` | Power BI dashboard file |
+| `ecommerce_analysis.png` | Dashboard preview image |
+| `README.md` | Project documentation |
+
+## 🚀 How to Use
+
+1. Download the `Ecommerce_analysis.pbix` file.
+2. Open it using **Microsoft Power BI Desktop**.
+3. If required, configure the PostgreSQL data source.
+4. Refresh the data.
+5. Use the dashboard filters and visuals for analysis.
+
+## 📚 Skills Demonstrated
+
+- Data Analysis
+- Data Cleaning
+- Data Modeling
+- DAX
+- Power BI Visualization
+- PostgreSQL
+- SQL
+- Business Intelligence
+- Dashboard Development
+- Data Storytelling
+
+## 👨‍💻 Author
+
+**Aanand Gupta**
+
+Data Analyst | Power BI | SQL | PostgreSQL | Excel
+
+
